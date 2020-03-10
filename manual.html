@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manual de Usuario</title>
+    <link rel="stylesheet" href="manual.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Matrix Operations</title>
+  </head>
+  <body>
+    <div class="top">
+      <a href="index.html"><img class="logo" src="assets/Logo.png"/></a>
+      <div class="top-left">
+        <a href="documentacion.html" class="listElement">Documentación</a>
+        <a href="calc.html"><button class="btn">Generar Matrices</button></a>
+      </div>
+    </div>
+    <section class="Text">
+      <h1 class="lbl">Manual de Usuario</h1>
+      <p class="paragraph">
+        <span class="sub">Generar una matriz</span> <br />
+        Podemos apreciar que en el la pagina de lanzamiento hay un botón que
+        dice “generar matrices”, al darle aquí nos lleva a otra pagina donde
+        podemos ver cuatro entradas de texto. Estas entradas solo nos permitirán
+        introducir números, los cuales representan el orden de la matriz a
+        generar. En la primera entrada serán el numero de filas, y la segunda
+        será el numero de columnas.
+        <br />
+        Al presionar el botón “Generar” creará dos matrices con llenas con
+        números de forma aleatoria, pero con el orden dado por el usuario.
+        <br /><br />
+        <span class="sub">Cáculos</span> <br />
+        Después de haber generado las matrices, esta hará unos cálculos
+        dependiendo de los ordenes de las matrices, si son: <br />
+        - Conformables para la suma, se hallará la matriz equivalente a la suma
+        de 3 veces la primera matriz, mas 4 veces la segunda matriz. <br />
+        - Conformables para la multiplicación, se hallará el producto de dos
+        veces la primera matriz, por la matriz resultante de sacar el logaritmo
+        decimal* a cada elemento de la 2da matriz. También se hallará la
+        multiplicación matricial de cada elemento de la primera matriz elevado
+        al cubo, por cada elemento de la segunda matriz, luego sacarle la raíz
+        cuadrada. *<br />
+        - Conformables para la sustracción, se hallará la matriz equivalente a
+        la sustracción de la primera matriz por cada elemento de la raíz
+        cuadrada de la segunda matriz. *<br />
+        - Pertenecen a matrices cuadradas, se determinará si ambas matrices son
+        simétricas.<br /><br /><span class="nota">
+          *Todos los resultados que sean decimales serán redondeados a su numero
+          entero mas cercano.<br />
+          *Matemáticamente el logaritmo de 0 es indefinido, por esto, si la
+          matriz resultante generada contiene ceros, no va a poder realizar la
+          operación y mandara un mensaje de alerta.<br
+        /></span>
+        <br />
+        <span class="sub">Órdenes de Matrices.</span><br />
+        Órdenes de Matrices. Los ordenes de dos matrices son conformables para
+        la <span class="bold">suma y resta </span>cuando las filas de ambas son
+        iguales y a la vez las columnas de ambas son iguales.<br />
+        Se pueden <span class="bold">multiplicar</span> cuando el numero de
+        columnas de la primera matriz es igual al numero de filas de la segunda.
+      </p>
+    </section>
+    <div class="footer">
+      <label
+        >Proyecto Final - Análisis y diseño de Algoritmos<br />
+        Profesora Rina Familia <br />
+        <span class="name">Adriana Mota 18-0413 💕</span>
+      </label>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafffd;
+  padding-left: 4rem;
+  padding-top: 0.5rem;
+  font-size: 62.5%;
+  font-family: Poppins;
+  position: relative;
+  color: #272727;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  overflow: hidden;
+}
+.logo {
+  width: 10rem;
+  margin-bottom: 3.2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-left {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.listElement {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #272727;
+  text-align: center;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.listElement:hover {
+  color: black;
+}
+
+.lbl {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.inpt {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  border-color: #73ccb2;
+  outline: none;
+  font-family: Poppins;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.inpt:focus {
+  box-shadow: 0px 4px 2px -2px rgb(115, 204, 178, 0.25);
+}
+.coma {
+  font-size: 2rem;
+  margin: 0 0.7rem 0 0.2rem;
+}
+.inputComaWrap {
+  display: flex;
+  align-items: flex-end;
+}
+.btn {
+  border-radius: 30px;
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  color: white;
+  background-color: #73ccb2;
+  font-size: 1.4rem;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.btn:focus {
+  background-color: #62ae97;
+}
+
+#cont1 {
+  box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+#cont2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+#matrixes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.matrix {
+  margin-right: 3rem;
+  border: 1px solid;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  height: fit-content;
+}
+.matrixSum {
+  align-self: center;
+  border: 1px solid;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  height: fit-content;
+  margin-right: 3rem;
+}
+
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sumRow {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.number {
+  font-family: Poppins;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  line-height: 3rem;
+}
+.rSum {
+  font-family: Poppins;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3rem;
+  padding-right: 2rem;
+}
+.description {
+  font-family: Poppins;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 5rem;
+}
+
+.cualbl {
+  font-family: Poppins;
+  font-size: 1.3rem;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-weight: bold;
+}
+.cuadrada {
+  align-self: center;
+  padding-left: 2rem;
+  height: fit-content;
+  margin-right: 3rem;
+  margin-top: 5rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -4rem;
+  margin-bottom: -3rem;
+  align-self: flex-end;
+  padding: 1.8rem;
+  margin-top: 15rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8rem;
+  font-weight: 100;
+  background-color: #dbfff1;
+}
+.name {
+  line-height: 3rem;
+  font-weight: 200;
+}

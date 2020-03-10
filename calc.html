@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="calc.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Matrix Operations</title>
+  </head>
+  <body>
+    <div class="top">
+      <a href="index.html"><img class="logo" src="assets/Logo.png"/></a>
+      <div class="top-left">
+        <a href="manual.html" class="listElement">Manual de Usuario</a>
+        <a href="documentacion.html" class="listElement">Documentación</a>
+      </div>
+    </div>
+    <main>
+      <section id="cont1">
+        <label class="lbl">Matriz 1</label> <br />
+        <div class="inputComaWrap">
+          <input
+            type="text"
+            onkeypress="return isNumberKey(event)"
+            class="inpt i1"
+          />
+          <label class="coma">, </label>
+          <input
+            type="text"
+            onkeypress="return isNumberKey(event)"
+            class="inpt i2"
+          />
+        </div>
+        <br />
+        <br />
+        <label class="lbl">Matriz 2</label> <br />
+        <div class="inputComaWrap">
+          <input
+            type="text"
+            onkeypress="return isNumberKey(event)"
+            class="inpt i3"
+          /><label class="coma">, </label>
+          <input
+            type="text"
+            onkeypress="return isNumberKey(event)"
+            class="inpt i4"
+          />
+        </div>
+        <br />
+        <button class="btn generar">Generar</button>
+        <button class="btn limpiar">Limpiar</button>
+        <br />
+        <label style="font-size: 1.6rem" id="resBusqueda"> </label>
+      </section>
+      <section id="cont2"></section>
+    </main>
+    <div class="footer">
+      <label
+        >Proyecto Final - Análisis y diseño de Algoritmos<br />
+        Profesora Rina Familia <br />
+        <span class="name">Adriana Mota 18-0413 💕</span>
+      </label>
+    </div>
+    <script type="text/javascript" src="calc.js"></script>
+  </body>
+</html>

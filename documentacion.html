@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manual de Usuario</title>
+    <link rel="stylesheet" href="manual.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Matrix Operations</title>
+  </head>
+  <body>
+    <div class="top">
+      <a href="index.html"><img class="logo" src="assets/Logo.png"/></a>
+      <div class="top-left">
+        <a href="manual.html" class="listElement">Manual de Usuario</a>
+        <a href="calc.html"><button class="btn">Generar Matrices</button></a>
+      </div>
+    </div>
+    <section class="Text">
+      <h1 class="lbl">Documentación</h1>
+      <p class="paragraph">
+        <span class="sub">Problema</span> <br />
+        A un sistema se le introducirán cuatro números, y se asumirá que son
+        ordenes de dos matrices cuyos elementos se generarán aleatoriamente. Si
+        los órdenes de las matrices son:<br />
+        • Conformables para la suma, se hallará la matriz equivalente a la suma
+        de tres veces jla primera matriz mas 4 veces la segunda matriz<br />
+        • Conformables para la multiplicación, se hallará el producto de dos
+        veces la primera matriz, por la matriz resultante de sacar el logaritmo
+        decimal a cada elemento de la 2da matriz.<br />
+        • Conformables para la sustracción, se hallará la matriz equivalente a
+        la sustracción de la primera matriz por cada elemento de la raíz
+        cuadrada de la segunda matriz.<br />
+        • Conformables para la multiplicación, se hallará la multiplicación de
+        cada elemento de la primera matriz elevado al cubo, por cada elemento de
+        la segunda matriz, luego sacarle la raíz cuadrada.<br />
+        • Pertenecen a matrices cuadradas, se determinará si ambas matrices son
+        simétricas.<br />
+        <br />
+        <span class="sub">Entradas</span> <br />
+        “Si a un sistema se le introducirán cuatro números”, Al ver esto sabemos
+        que tenemos cuatro entradas, por lo que decidí colocar cuatro inputs.
+        Sabemos que estos representaran los ordenes de las dos matrices, nombre
+        a los inputs c1, f1, c2, f2.<br /><br />
+        <span class="sub">Algoritmo principal</span> <br />
+        Aquí analicé todos los posibles escenarios y lo representé en un
+        diagrama de flujo. Para Generar las matrices utilicé
+        <span class="bold">iteración</span>, como mismo utilicé en la mayoría de
+        las funciones.<br /><br />
+        <img class="algImg" src="assets/AlgoritmoPrincipal.png" /><br /><br />
+        <span class="sub">Multiplicación</span> <br />
+        Hay dos casos de multiplicación, en ambos para multiplicarlas utilizamos
+        el mismo principio. Utilizamos un loop que vaya recorriendo las filas de
+        la primera matriz, dentro de este le sigue uno que recorra las columnas,
+        Recordando que el numero de columnas de la primera matriz es igual al
+        numero de filas de la segunda matriz, utilizaremos el mismo loop para
+        ambas, por ultimo entramos otro loop que recorra el numero de columnas
+        de la segunda matriz.<br />
+        En el primer caso de multiplicación, vemos antes de proceder a hacer los
+        cálculos, verificamos si el numero a procesar es diferente a 0, en caso
+        de ser igual mandamos una alerta de que no se puede realizar debido a
+        que log(0) es indefinido.<br /><br />
+        <img class="algImg" src="assets/Mult1.png" /><br /><br />
+        En el segundo caso es lo mismo, sin embargo aquí no pasamos a verificar
+        si el numero a procesar es cero o no, y pasamos a hacer la operación
+        directamente.<br /><br />
+        <img class="algImg" src="assets/Mult1.png" /><br /><br />
+        <span class="sub">Suma</span> <br />
+        Este algoritmo es muy simple, primero a través de un for loop procesamos
+        la filas y luego las columnas de la matriz, ya que se supone que f1 = f2
+        y c1 = c2, esto nos simplifica mucho el calculo. Luego de que procesamos
+        ambas, filas y columnas pasamos a hacer la operación, nos va a retornar
+        el resultado.<br /><br />
+        <img class="algImg" src="assets/Sum.png" /><br /><br />
+        <span class="sub">Resta</span> <br />
+        Este algoritmo sigue el mismo principio que el de la suma, lo único que
+        cambiaria seria el signo de la operación matemática a realizar, como
+        podemos ver en el diagrama de flujo:<br /><br />
+        <img class="algImg" src="assets/Rest.png" /><br /><br />
+        <span class="sub">Si la matriz es cuadrada</span> <br />
+        En este algoritmo tomamos en cuenta que es una matriz de orden nxn
+        utilizamos dos for loops uno dentro de otro, que ambos vayan de 1 hasta
+        n, con esto tendremos procesada la matriz completa. Sabiendo que para
+        que una matriz sea simétrica la traspuesta de la matriz (si invertimos
+        las columnas y filas) es igual a esta utilizamos newMat[i][j] =
+        matriz[j][i], como podemos ver, aquí estamos dándole los valores de las
+        filas y columnas inversamente a newMat, es decir, sacando la traspuesta
+        de “matriz” y almacenándola en newMat.<br />
+        Una vez teniendo la traspuesta de la matriz, fuera del for loop
+        verificamos si la traspuesta (newMat) es igual a la matriz, si es asi,
+        nos retornara True, significa que la matriz es simétrica.<br />
+        Ahora, en otra función, que es donde nos dara el resultado final,
+        verificamos si ambas matrices retornan verdadero (true), en caso de que
+        sea así, nos dira que ambas matrices son simétricas, en caso contrario,
+        retornara que no ambas matrices son simétricas.<br /><br />
+        <img class="algImg" src="assets/Cuadrada.png" /><br /><br />
+      </p>
+    </section>
+    <div class="footer">
+      <label
+        >Proyecto Final - Análisis y diseño de Algoritmos<br />
+        Profesora Rina Familia <br />
+        <span class="name">Adriana Mota 18-0413 💕</span>
+      </label>
+    </div>
+  </body>
+</html>
